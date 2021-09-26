@@ -10,7 +10,7 @@ var app = express();
 const db = require('./config/keys').mongoURI;
 
 // parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 
 
