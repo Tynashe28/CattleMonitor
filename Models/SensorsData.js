@@ -15,8 +15,7 @@ const SensorDataSchema = mongoose.Schema({
         required:true
     },
     pulse :{
-        type:Number,
-        required:true
+        type:Number
     },
     date:{
         type: Date,
