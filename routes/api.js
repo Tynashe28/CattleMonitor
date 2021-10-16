@@ -12,7 +12,8 @@ router.post('/v1/fieldParams',async(req,res)=>{
     const cowData = {
         lat : req.body.l,
         lng: req.body.g,
-        temperature :req.body.t
+        temperature :req.body.t,
+        pulse:0
     }
     const sendData = new SensorData(cowData);
     await sendData.save().catch(err=>{});
