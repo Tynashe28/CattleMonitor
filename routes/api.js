@@ -10,10 +10,10 @@ const SensorData = require('../Models/SensorsData');
 router.post('/v1/fieldParams',async(req,res)=>{
    
     const cowData = {
-        lat : req.body.lat,
-        lng: req.body.lng,
-        temperature :req.body.temperature,
-        pulse :req.body.pulse
+        lat : req.body.l,
+        lng: req.body.g,
+        temperature :req.body.t,
+        //pulse :req.body.pulse
     }
     const sendData = new SensorData(cowData);
     await sendData.save().catch(err=>{});
